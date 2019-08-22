@@ -1,0 +1,2 @@
+# easy-licenses
+EASY Licenses
