@@ -23,7 +23,7 @@ import org.scalatest.{ FlatSpec, Inspectors, Matchers }
 
 class LicensesJsonSpec extends FlatSpec with Matchers with Inspectors {
 
-  private val LICENSES_DIR = "src/main/assembly/dist/licenses"
+  private val LICENSES_DIR = "src/main/resources/licenses"
   private val files = new File(LICENSES_DIR).listFiles.filter(_.isFile).map(_.getName).filterNot(n => n.endsWith("properties") || n.endsWith("json")).toList
   private val fileNames = files.map(f => f.substring(0, f.lastIndexOf(".")))
   private val json = parse(new File(LICENSES_DIR, "licenses.json"))
