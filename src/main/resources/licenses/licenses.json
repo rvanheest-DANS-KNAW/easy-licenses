@@ -83,20 +83,12 @@
     "title": "CERN-OHL-1.2",
     "viewName": "CERN-OHL-1.2"
   },
-  "http://www.ohwr.org/projects/cernohl/wiki": {
-    "title": "CERN-OHL-1.2",
-    "viewName": "CERN-OHL-1.2"
-  },
   "http://www.tapr.org/ohl.html": {
     "title": "TAPR-OHL-1.0",
     "viewName": "TAPR-OHL-1.0"
   },
-  "http://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt": {
-    "title": "TAPR-OHL-1.0",
-    "viewName": "TAPR-OHL-1.0"
-  },
-  "http://dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSGeneralconditionsofuseUKDEF.pdf": {
-    "title": "DANSGeneralconditionsofuseUKDEF",
-    "viewName": "DANSGeneralconditionsofuseUKDEF"
+  "http://dans.knaw.nl/en/about/organisation-and-policy/legal-information/dans-licence.pdf": {
+    "title": "DANS_Licence_UK",
+    "viewName": "DANS_Licence_UK"
   }
 }
