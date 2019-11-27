@@ -1,0 +1,129 @@
+General conditions of use
+
+The person to whom Data Archiving and Networked Services (DANS) makes one or
+more dataset files available (hereafter ‘the user’), declares that he/she is
+in agreement with the following conditions of use of DANS.
+
+1. Bibliographical reference when using data in publications
+
+The user shall always include a bibliographical reference in the research
+results that he/she publishes, in whichever form, where use is made of digital
+data originating from one of the datasets of DANS. This applies to datasets
+in all access categories. The reference at least consists of the following:
+
+    • Name (names) of the person(s) and/or organisations who produced the dataset.
+        This is the information mentioned in the description of the dataset, under
+        the tab ‘Description’ in EASY, in the field ‘Creator’. The information contained in this
+        field is copied fully, except the DAI, if present.
+    • The year in which the dataset has been produced (Year from the field ‘Date created’
+        in the description of the dataset in EASY).
+    • The title of the dataset (field ‘Title’ in the description of the dataset in EASY).
+    • The name of the archive in which the dataset is archived: DANS.
+    • The persistent identifier of the dataset, preceded by 'http://persistent-
+        identifier.nl' (field ‘Persistent identifier’ in the description of the dataset in EASY).
+
+The format of these fields in the bibliographical reference is: Creator (Year created):
+Title. DANS. Persistent Identifier. The specific format can be found in ‘Cite as’
+under the tab ‘Description’ in EASY.
+For bibliographical references to digital reports the usual guidelines for citing
+reports apply (see the Clarification of the General Conditions of DANS).
+
+2. Distribution or disclosure of the dataset
+
+The user shall respect any copyright and/or database and/or neighbouring rights
+associated with the dataset. Before distributing or disclosing the entire
+dataset or substantial parts thereof, the user shall first obtain permission
+from the holder of the rights to the dataset, i.e. the person(s) and/or institution(s)
+referred to in the dataset description in EASY (“Description” tab) under “Rights holder”
+or, if this field is missing, under “Creator”.
+For datasets in the Open Access (CC0 Waiver) category, no permission for distribution
+or disclosure has to be requested.
+
+3. Other references when distributing or disclosing data
+
+Next to the bibliographical reference referred to in Article 1 above,
+when distributing or disclosing the entire dataset or substantial parts
+thereof in the manner described in Article 2 above after having
+obtained permission from those entitled to the dataset, the user shall
+always state or declare:
+    • the name of the holder of the rights to the dataset;
+    • that the holder of these rights has authorised the distribution of the data;
+    • that redistribution by third parties is not allowed without express
+        permission of the holder of the rights to the dataset.
+
+4. Publications
+
+The user must provide DANS with the bibliographical details of all printed
+or digital publications that contain data from a DANS dataset and are not
+available via the Internet. Issues with an internationally recognised standard
+identification number, such as ISBN, ISSN or DOI are understood as publications.
+If the publication is available via the Internet, the user shall forward the
+URL to DANS.
+
+5. Personal data protection
+
+Datasets that contain personal information as referred to in the Personal
+Data Protection Act (Wet Bescherming Persoonsgegevens) may be used only
+for historical, statistical or scientific research. Persons who use datasets
+containing personal data are required to comply with the Code of Practice
+for the use of personal data in scientific and scholarly research (Gedragscode
+ voorgebruikvanpersoonsgegevensin wetenschappelijkonderzoek) published by the
+VSNU (Association of Universities in the Netherlands). Additional requirements
+may be set regarding the use of datasets that contain special personal data,
+such as amongst others, data concerning religion, health or race. This does
+not alter the fact that the user is at all times responsible for any subsequent
+processing of particular personal data.
+
+6. Content liability
+
+DANS is in no way whatsoever liable for the content or accompanying documentation
+of the dataset. DANS is not liable for substantive errors or for incorrect
+conclusions based on the data. The user is requested, however, to inform
+DANS of any found errors immediately after discovery of these.
+
+7. Non-compliance with the Conditions of Use
+
+    a. In the case of non-compliance with one of these Conditions of Use, the use
+    of the dataset must be terminated immediately at the initial demand by DANS.
+    DANS reserves the right to, in such an event, to inform the user’s employer.
+    In the event of improper use of personal data, DANS also has the right to
+    inform the Dutch Data Protection Authority (College Bescherming Persoonsgegevens).
+    These measures do not prejudice the competence of DANS, in the event of non-compliance
+    or insufficient compliance with these Conditions of Use, to bring an action against
+    the user.
+
+    b. The user indemnifies DANS against all claims other parties may bring against
+    DANS as a direct or indirect result of the fact that the user has not or has
+    incompletely taken these Conditions of Use into consideration.
+
+8. Compelling reasons
+
+In the event of any compelling reasons, such as fraud or a breach of another party’s
+copyright, DANS has the right to prohibit the further use of the dataset by the user.
+
+9. Displaying personal data of user
+
+The user agrees that his or her personal data shall be used for internal user research
+at DANS. On the part of the DANS website that is accessible to registered users, it
+shall be made known which users (stating name, organisation and position) downloaded
+which dataset, with the exception of users who have objected to the displaying of their details.
+
+10. Applicable law
+Dutch law is applicable to these Conditions of Use.
+The provisions relating to personal data in these Conditions for Use were registered
+with the Personal Data Officer (Functionaris voor de Gegevensbescherming) of the
+Royal Netherlands Academy of the Arts and Sciences on 22 April 2009.
+
+
+
+Data Archiving and Networked Services (DANS)
+
+DANS promotes sustained access to digital research data. For this, DANS encourages
+scientific researchers to archive and reuse data in a sustained form, for instance
+via the online archiving system EASY (easy.dans.knaw.nl) and DataverseNL (dataverse.nl).
+With NARCIS (narcis.nl), DANS also provides access to thousands of scientific datasets,
+publications and other research information in the Netherlands. The institute
+furthermore provides training and consultancy and carries out research on sustained
+access to digital information. Driven by data, DANS ensures the further improvement
+of access to digital research data with its services and participation in
+(inter)national projects and networks. For more information and contact options, please visit dans.knaw.nl.
