@@ -15,11 +15,24 @@
  */
 package nl.knaw.dans.easy.licenses
 
-class LicensesJsonSpec extends LicenseJsonFixture {
+import java.io.File
 
-  "all the files in licenses.json" should "be present in the licenses directory and vice versa" in {
-    jsonMap.values
-      .map(_.viewName)
-      .toSeq.sortBy(identity) shouldBe documentBaseFileNames
+import org.scalatest.{ FlatSpec, Inspectors, Matchers }
+
+trait TestFixture extends FlatSpec with Matchers with Inspectors {
+
+  val LICENSES_DIR = "src/main/resources/licenses"
+
+  val documentFiles: List[String] = new File(LICENSES_DIR)
+    .listFiles.filter(_.isFile).map(_.getName)
+    .filterNot(n => n.endsWith("properties") || n.endsWith("json"))
+    .toList
+
+  val documentBaseFileNames: List[String] = documentFiles
+    .map(stripExtension)
+    .sortBy(identity).distinct
+
+  def stripExtension(fileName: String): String = {
+    fileName.replaceAll(".[^.]+$", "")
   }
 }

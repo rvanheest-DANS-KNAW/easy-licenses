@@ -15,11 +15,19 @@
  */
 package nl.knaw.dans.easy.licenses
 
-class LicensesJsonSpec extends LicenseJsonFixture {
+import java.io.File
 
-  "all the files in licenses.json" should "be present in the licenses directory and vice versa" in {
-    jsonMap.values
-      .map(_.viewName)
-      .toSeq.sortBy(identity) shouldBe documentBaseFileNames
-  }
+import org.json4s.Extraction.extract
+import org.json4s.JsonAST.JObject
+import org.json4s.native.JsonMethods.parse
+import org.json4s.{ DefaultFormats, Formats }
+
+case class Item(title: String, viewName: String)
+
+class LicenseJsonFixture extends TestFixture {
+  implicit val jsonFormats: Formats = new DefaultFormats {}
+
+  val jsonMap: Map[String, Item] = parse(new File(LICENSES_DIR, "licenses.json"))
+    .asInstanceOf[JObject].obj
+    .map { case (url, value) => url -> extract[Item](value) }.toMap
 }

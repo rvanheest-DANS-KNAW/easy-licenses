@@ -15,11 +15,10 @@
  */
 package nl.knaw.dans.easy.licenses
 
-class LicensesJsonSpec extends LicenseJsonFixture {
+import java.io.File
 
-  "all the files in licenses.json" should "be present in the licenses directory and vice versa" in {
-    jsonMap.values
-      .map(_.viewName)
-      .toSeq.sortBy(identity) shouldBe documentBaseFileNames
-  }
+import org.apache.commons.configuration.PropertiesConfiguration
+
+trait PropsFixture extends TestFixture {
+  val props = new PropertiesConfiguration(new File(LICENSES_DIR, "licenses.properties"))
 }

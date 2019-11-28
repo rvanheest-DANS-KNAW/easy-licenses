@@ -17,23 +17,30 @@ package nl.knaw.dans.easy.licenses
 
 import java.io.File
 
-import org.apache.commons.configuration.PropertiesConfiguration
-import org.scalatest.{ FlatSpec, Inspectors, Matchers }
-
 import scala.collection.JavaConverters._
 
-class LicensesPropertiesSpec extends FlatSpec with Matchers with Inspectors {
+class LicensesPropertiesSpec extends PropsFixture {
 
-  private val LICENSES_DIR = "src/main/resources/licenses"
-  private val files = new File(LICENSES_DIR).listFiles.filter(_.isFile).map(_.getName).filterNot(n => n.endsWith("properties") || n.endsWith("json")).toList
-  private val props = new PropertiesConfiguration(LICENSES_DIR + "/licenses.properties")
-  private val propValues = props.getKeys.asScala.map(key => props.getString(key)).toList
+  private val propFiles: Seq[String] = props.getKeys.asScala
+    .map(key => props.getString(key))
+    .toSeq
+  val propBaseFileNames: Seq[String] = propFiles
+    .map(stripExtension)
+    .sortBy(identity).distinct
 
-  "all the files in licenses.properties" should "be present in the licenses directory" in {
-    forEvery(propValues) { files should contain(_) }
+  "all the files in licenses.properties" should "be present in the licenses directory and vice versa" in {
+    propBaseFileNames shouldBe documentBaseFileNames
   }
 
-  "all the files in licenses directory (except .properties and .json files)" should "be present in the licenses.properties file" in {
-    forEvery(files) { propValues should contain(_) }
+  "a file with extension specified in licenses.properties" should "exist in the licenses directory" in {
+    forEvery(propFiles) { fileName => file(fileName) should exist }
+  }
+
+  "all license files" should "have a text version" in { // used by easy-deposit-agreement-creator
+    forEvery(propBaseFileNames) { baseFileName => file(s"$baseFileName.txt") should exist }
+  }
+
+  private def file(fileName: String) = {
+    new File(LICENSES_DIR, fileName)
   }
 }
