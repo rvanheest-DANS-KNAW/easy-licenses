@@ -17,9 +17,11 @@ package nl.knaw.dans.easy.licenses
 
 import java.io.File
 
-import org.scalatest.{ FlatSpec, Inspectors, Matchers }
+import org.scalatest.Inspectors
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-trait TestFixture extends FlatSpec with Matchers with Inspectors {
+trait TestFixture extends AnyFlatSpec with Matchers with Inspectors {
 
   val LICENSES_DIR = "src/main/resources/licenses"
 
